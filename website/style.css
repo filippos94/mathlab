@@ -1,0 +1,422 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;    
+    background: #004242;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.6s;
+    z-index: 100000;
+
+}
+
+
+section{
+   margin: auto;
+}
+
+header .sticky{
+    padding: 5px 100px;
+    background: #333;
+  }
+
+header .logo{
+    text-decoration: none;
+    color:#fff;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fa {
+    padding: 1px;
+    font-size: 20px;
+    width: 5px;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    border-radius: 50%;
+    margin: 0px 0px 20px 20px;
+  }
+  
+    .fa-facebook-square:hover{
+       color: #2196f3;
+    }
+   .fa-instagram:hover{
+       color: rgb(228, 74, 182);
+   }
+
+   .fa-send:hover{
+       color: aqua;
+   }
+header nav{
+    float: right;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+header nav ul li{
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul ul{
+    display: none;
+}
+
+header ul li:hover >ul{
+    background: black;
+    display:block;
+}
+
+header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+
+header nav ul li a:hover{
+    color: #fff;
+    background: #004242;
+}
+header nav ul li a:hover,
+header nav ul li a.active{
+    color: #fff;
+    background: #004242;
+}
+
+header .menu-toggle{
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("https://www.wallpaperup.com/uploads/wallpapers/2014/10/02/467044/6327d828d1a186d5253927c2a5145c94-700.jpg");
+    background-size: cover;
+}
+
+
+
+.container{
+    margin-top: 200px;
+   
+}
+
+
+  
+  .sticky + .container {
+    padding-top: 102px;
+  }
+
+  .container img{
+    float: left;
+    width:20%;
+    height:5%;
+    border-radius: 50%;
+    padding: 0.5em;
+    margin: 0px 60px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table,th {
+    width: 69%;
+    height: 50%;
+    margin:0px 100px 0px 10px;
+    font-size: 19px;
+    text-align-last: left; 
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-footer{
+    color: aliceblue;
+    background: black;
+    border: 1px solid black;
+}
+
+#author p,#mail p{
+    color: aliceblue;
+    display: inline-block;
+}
+
+#author{
+    float: left;
+}
+
+#mail{
+    float: right;
+}
+
+.gallery{
+    margin: 0px 120px 0px;
+    margin-top: 120px;
+}
+
+.gallery h2{
+    color:aliceblue;
+    font-family: sans-serif;
+
+}
+.gallery .column{
+    float: left;
+    width: 29%;
+    height:5%;
+    padding: 5px;
+    transition: 1s;
+    cursor: zoom-in;
+}
+
+
+.gallery .column:hover{
+    width: 34%;
+    height: 5%;
+}
+
+
+.gallery .row::after{
+    float: left;
+    content: "";
+    display:table;
+    clear: both;
+}
+footer{
+    bottom: 0%;
+}
+
+@media (max-height:800px){
+    footer { position: static; 
+    }
+}
+
+
+.footer-distributed{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 680px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-author-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 30px 0px 0px;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: left;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+
+
+
+@media(max-width:991px){
+    header{
+        padding: 0 20px;
+    }
+    header .menu-toggle{
+        display: block;
+    }
+    header nav{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height:calc(100vh-50px);
+        background: #333;
+        top: 50px;
+        transition: 0.5s;
+    }
+    header nav .active{
+        left: 0;
+        display: inline-block;
+    }
+
+    header nav ul{
+        display:block;
+        text-align: center;
+    }
+    header nav ul li a{
+    border-bottom: 1px solid rgba(0,0,0,.4);
+    }   
+
+    table,th {
+        display: block;
+        font-size: 100%;
+        width: 90%;
+        color: aliceblue;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+.gallery .column{
+    float: left;
+    width: 100px;
+    height:100px;
+    padding: 15px;
+    display: table;
+}
+
+}
